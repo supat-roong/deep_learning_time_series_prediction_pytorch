@@ -1,0 +1,22 @@
+{
+    "data_preparation": {
+        "seq_length": 4,
+        "train_set_ratio": 0.8
+    },
+    "model_selection": {
+        "model": "rnn",
+        "input_size": 4,
+        "output_size": 4,
+        "hidden_size": 8,
+        "num_layers": 1
+    },
+    "model_training": {
+        "num_epochs": 2000,
+        "learning_rate": 0.01,
+        "print_loss_every": 100
+    },
+    "data_visualization": {
+        "input_data_plot_title": "Input Data Visualization",
+        "prediction_data_plot_title": "Time-Series Prediction"
+    }
+}
