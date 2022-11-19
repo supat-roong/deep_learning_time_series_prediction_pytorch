@@ -5,8 +5,8 @@
     },
     "model_selection": {
         "model": "rnn",
-        "input_size": 4,
-        "output_size": 4,
+        "input_size": 5,
+        "output_size": 5,
         "hidden_size": 8,
         "num_layers": 1
     },
