@@ -28,6 +28,11 @@ def plot_input_data(column_name_list, input_data, plot_title, output_image_name)
 
             # Check if finish plotting
             if (count_num_plot + 1) == num_plot:
+                # Remove unplotted axis
+                while j < (num_col - 1):
+                    j += 1
+                    axs[i, j].axis("off")
+
                 # Remove inner axis label
                 for ax in axs.flat:
                     ax.label_outer()
@@ -81,12 +86,17 @@ def plot_prediction(
 
                 # Check if finish plotting
                 if (count_num_plot + 1) == num_plot:
+                    # Remove unplotted axis
+                    while j < (num_col - 1):
+                        j += 1
+                        axs[i, j].axis("off")
+
                     # Remove inner axis label
                     for ax in axs.flat:
                         ax.label_outer()
 
                     # Add legend
-                    plt.legend(
+                    fig.legend(
                         ["Ground Truth", "Prediction"],
                         loc="lower center",
                         bbox_to_anchor=(0, -0.05, 1, 1),
