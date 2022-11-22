@@ -38,11 +38,11 @@ def plot_input_data(column_name_list, input_data, plot_title, output_image_name)
                     ax.label_outer()
 
                 # Save graph
-                fig.savefig(f"{output_image_name}.pdf", bbox_inches="tight")
+                fig.savefig(output_image_name, bbox_inches="tight")
                 # Convert to png
-                os.system(
-                    f"pdftoppm -png -r 300 -singlefile {output_image_name}.pdf {output_image_name}"
-                )
+                # os.system(
+                #     f"pdftoppm -png -r 300 -singlefile {output_image_name}.pdf {output_image_name}"
+                # )
                 return
 
 
@@ -104,11 +104,11 @@ def plot_prediction(
                         ncol=2,
                     )
                     # Save graph
-                    fig.savefig(f"{output_image_name}.pdf", bbox_inches="tight")
+                    fig.savefig(output_image_name, bbox_inches="tight")
                     # Convert to png
-                    os.system(
-                        f"pdftoppm -png -r 300 -singlefile {output_image_name}.pdf {output_image_name}"
-                    )
+                    # os.system(
+                    #     f"pdftoppm -png -r 300 -singlefile {output_image_name}.pdf {output_image_name}"
+                    # )
                     return
 
     else:

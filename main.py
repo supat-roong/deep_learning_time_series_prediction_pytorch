@@ -54,7 +54,7 @@ def main():
         "-gn",
         "--graph_file_name",
         type=str,
-        default="output_graph",
+        default="output_graph.png",
         help="output graph data file name",
     )
     parser.add_argument(
