@@ -20,18 +20,18 @@ For the time-series data, we usually use RNN (Recurrent neural network) for the 
     ```
     $ cd  deep_learning_time_series_prediction_pytorch
     ```
-3. Download the dependencies from `requirement.txt`
-    ```
-    $ pip install -r requirements.txt
-    ```
-    
-    Or create a virtual environment (optional)
+3. Create a virtual environment (optional)
     ```
     $ conda create --name <env_name> --file requirements.txt
     ```
-4. Place your dataset in `assets/data/`
-5. Setup config file corresponding to your data in `assets/config/config.json`
-6. Run the main program
+    then activate the environment
+    ```
+    $ conda activate <env_name>
+    ```
+4. Download the dependencies from `requirement.txt`
+5. Place your dataset in `assets/data/`
+6. Setup config file corresponding to your data in `assets/config/config.json`
+7. Run the main program
     ```
     $ python main.py -dn <your_dataset_file_name>
     ```
