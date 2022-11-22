@@ -64,6 +64,6 @@ $ python main.py -dn demo_dataset_tetuan_city_power_consumption.csv
    - Training information in the form of epoch and loss
    - Process time when finish
 2. File output
-   - Image files of the prediction graph in pdf and png format
+   - Image files of the prediction graph in specified format
      - Example of output graph from previous example
      ![output graph](https://github.com/supat-roong/deep_learning_time_series_prediction_pytorch/blob/main/assets/img/demo_output_graph.png?raw=true)
