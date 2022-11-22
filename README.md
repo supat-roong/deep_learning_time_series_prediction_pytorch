@@ -29,6 +29,9 @@ For the time-series data, we usually use RNN (Recurrent neural network) for the 
     $ conda activate <env_name>
     ```
 4. Download the dependencies from `requirement.txt`
+    ```
+    $ pip install -r requirements.txt
+    ```
 5. Place your dataset in `assets/data/`
 6. Setup config file corresponding to your data in `assets/config/config.json`
 7. Run the main program
