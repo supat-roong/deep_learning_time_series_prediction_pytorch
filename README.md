@@ -18,7 +18,7 @@ For the time-series data, we usually use RNN (Recurrent neural network) for the 
     ```
 2. Change the working directory to root
     ```
-    $ cd  deep_learning_time_series_prediction_pytorch
+    $ cd deep_learning_time_series_prediction_pytorch
     ```
 3. Create a virtual environment (optional)
     ```
